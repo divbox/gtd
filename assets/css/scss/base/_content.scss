@@ -1,0 +1,90 @@
+// font families 
+$serif: Georgia, Times, "Times New Roman", serif;
+$sans-serif: Arial, sans-serif;
+$sans-serif-narrow: "Arial Narrow", Arial, sans-serif;
+
+body {
+  font-family: $serif;
+  font-size: 14px;
+  color: map-get($colors, black);
+  background: #fafafa;
+}
+a {
+  color: map-get($colors, darkred);
+  text-decoration: none;
+  &:visited {
+    color: map-get($colors, darkred);
+  }
+}
+.container {
+  max-width: 1160px;
+  position: relative;
+}
+.content {
+  overflow: hidden;
+}
+.main {
+  @include media-m {
+    float: left;
+    @include span(8 of 12 .4);
+  }
+  article {
+    margin-bottom: 2em;
+    .article-inner {
+      padding: 0 1em;
+    }
+    figure {
+      img {
+        box-shadow: 0 1px 10px rgba(0,0,0,0.5), 0 -1px 10px rgba(0,0,0,0.1);
+        @include media-m {
+          box-shadow: none;
+        }
+      }
+    }
+    img {
+      max-width: 100%;
+    }
+    h1 {
+      font-family: $sans-serif-narrow;
+      color: map-get($colors, darkred);
+      font-size: 34px;
+      margin: .5em 0 0;
+      line-height: 1;
+    }
+    p {
+      color: map-get($colors, black);
+      line-height: 1.5;
+      margin: .8em 0 1em;
+    }
+    footer {
+      font-family: $sans-serif;
+      margin: 1.7em 0 2em;
+      color: #888;
+      text-transform: uppercase;
+      font-size: 11px;
+      a {
+        color: inherit;
+      }
+    }
+  }
+  figure {
+    margin: 0;
+  }
+  .article-tiles {
+    @include media-m {
+      article {
+        @include gallery(1 of 3);
+        @include rounded;
+        @include border-shadow;
+        background: white;
+      }
+      h1 {
+        font-size: 21px;
+        text-transform: uppercase;
+      }
+      .article-inner {
+      }
+    }
+  }
+}
+

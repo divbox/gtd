@@ -1,0 +1,147 @@
+.header-main {
+  height: 70px;
+  background: white;
+  @include media-m {
+    height: 72px;
+    background: map-get($colors, darkerred);
+    margin: 0 0 60px;
+  }
+  nav {
+    display: none;
+    float: left;
+    margin: 21px 0 0 15px;
+    @include media-m {
+      display: block;
+    }
+    ul {
+      margin: 0;
+      padding: 0;
+    }
+    li {
+      float: left;
+      list-style: none;
+    }
+    a {
+      display: inline-block;
+      font-family: $sans-serif-narrow;
+      color: white;
+      text-transform: uppercase;
+      padding: 5px 10px;
+      font-size: 16px;
+    }
+  }
+}
+.logo {
+  width: 80px;
+  margin: 10px 0 0 14px;
+  float: left;
+  @include media-m {
+    width: auto;
+  }
+  img {
+    display: block;
+    max-width: 100%;
+  }
+}
+.search {
+  @extend .ir;
+  position: absolute;
+  width: 40px; height: 40px;
+  background: url(../img/search.png) no-repeat center center / 50%;
+  top: 17px; right: 10px;
+}
+.mobile-nav {
+  @include media-m {
+    display: none;
+  }
+}
+.menu-btn {
+  position: absolute;
+  top: 11px; right: 10px;
+  font-size: 40px;
+  padding-left: 1.25em;
+  text-indent: -1000px;
+  overflow: hidden;
+  display: inline-block;
+  @include media-m {
+    display: none;
+  }
+  &:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0.25em;
+    width: 1em;
+    height: 0.15em;
+    background: map-get($colors, darkred);
+    box-shadow: 
+      0 0.25em 0 0 map-get($colors, darkred),
+      0 0.5em 0 0 map-get($colors, darkred);
+  }
+}
+.pushy {
+  background: map-get($colors, darkred);
+  ul {
+    padding: 0;
+  }
+  a {
+    color: white;
+    font-family: $sans-serif;
+    &:visited {
+      color: white;
+    }
+  }
+}
+.social {
+  text-align: center;
+  height: 23px;
+  a {
+    display: inline-block;
+    width: 23px; height: 23px;
+    background: url(../img/social-icons.png) no-repeat left center;
+    margin-right: 10px;
+    text-indent: -1000px;
+    overflow: hidden;
+    &:nth-child(2) { background-position: -25px center; }
+    &:nth-child(3) { background-position: -50px center; }
+    &:nth-child(4) { background-position: -75px center; }
+  }
+}
+.search-mobile {
+  background: #791414;
+  input[type="text"] {
+    display: block;
+    background: transparent;
+    border: none;
+    height: 40px; line-height: 20px;
+    font-family: $sans-serif;
+    padding: 0 40px 0 20px;
+    width: 100%;
+    color: white;
+    outline: none;
+  }
+  input[type="submit"] {
+    position: absolute;
+    top: 0; right: 0;
+    height: 40px; width: 40px;
+    color: white;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
