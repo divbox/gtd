@@ -10,7 +10,7 @@
 }
 .util {
   background: #ddd;
-  padding: 2em 1em;
+  padding: 2em .2em;
   @include border-shadow;
   @include rounded;
   h4 {
@@ -103,7 +103,7 @@
   p {
     font-family: $sans-serif;
     line-height: 1.4;
-    color: black;
+    color: #333;
     margin: 0;
     padding-bottom: 1.5em;
   }

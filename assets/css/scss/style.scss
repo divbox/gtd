@@ -20,8 +20,8 @@ Author: Matt Oettinger
 
 // Base
 @import 
-  'base/content',
-  'base/typography';
+  'base/typography',
+  'base/content';
 
 // Layout
 @import 
@@ -31,6 +31,7 @@ Author: Matt Oettinger
 
 // Components
 @import 
+  'components/social',
   'components/comments',
   'components/forms',
   'components/flexslider',

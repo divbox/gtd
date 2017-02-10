@@ -26,6 +26,7 @@
 
 // Colors
 $colors: (
+  brightred: #d01111,
   red: #b20f0f,
   darkred: #951515,
   darkerred: #560303,
@@ -36,7 +37,7 @@ $colors: (
   border-radius: 3px;
 }
 @mixin border-shadow {
-  box-shadow: 0 1px 4px rgba(0,0,0,.1);
+  box-shadow: 0 4px 10px rgba(0,0,0,.05);
   border: 1px solid rgba(0,0,0,.09);
 
 }
