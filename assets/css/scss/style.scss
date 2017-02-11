@@ -1,0 +1,38 @@
+/*!
+Theme Name: Georgetown Dish
+Author: Matt Oettinger
+*/
+
+// Vendors
+@import 
+  'vendors/normalize',
+  'vendors/flexslider',
+  'vendors/pushy';
+
+// Susy
+@import
+  'susy',
+  'layout/susy';
+
+// Helpers
+@import 
+  'helpers/helpers';
+
+// Base
+@import 
+  'base/typography',
+  'base/content';
+
+// Layout
+@import 
+  'layout/header',
+  'layout/sidebar',
+  'layout/footer';
+
+// Components
+@import 
+  'components/social',
+  'components/comments',
+  'components/forms',
+  'components/flexslider',
+  'components/nav';

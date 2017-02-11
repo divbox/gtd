@@ -1,0 +1,46 @@
+.main {
+  .flexslider {
+    border: none;
+    margin: 0 0 2em;
+    .slides > article {
+      display: block;
+    }
+    @include media-m {
+      article {
+        margin: 0;
+      }
+      .article-inner {
+        position: absolute;
+        bottom: 0; left: 0; right: 0;
+        background: rgba(black, .7);
+        padding: 20px;
+      }
+      h1 {
+        color: white;
+        margin: 0;
+        text-transform: uppercase;
+        font-weight: normal;
+        font-size: 30px;
+      }
+      p {
+        color: #d8d7d7;
+        margin: .4em 0 0;
+        font-family: $sans-serif;
+      }
+      footer {
+        display: none;
+      }
+    }
+  }
+}
+.flex-direction-nav a {
+  width: 60px; height: 60px;
+  margin: -30px 0 0;
+  &:before {
+    font-size: 60px;
+    color: white;
+    &:visited {
+      color: white;
+    }
+  }
+}

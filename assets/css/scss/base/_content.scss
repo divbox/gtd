@@ -1,0 +1,142 @@
+body {
+  font-family: $serif;
+  font-size: 14px;
+  color: map-get($colors, black);
+  background: #fafafa;
+}
+a {
+  color: map-get($colors, red);
+  text-decoration: none;
+  &:visited {
+    color: map-get($colors, red);
+  }
+}
+.container {
+  max-width: 1160px;
+  position: relative;
+}
+.content {
+  overflow: hidden;
+  padding-bottom: 5em;
+}
+.main {
+  @include media-m {
+    float: left;
+    @include span(8 of 12 .4);
+  }
+  article {
+    margin-bottom: 2em;
+    .article-inner {
+      padding: 0 1em;
+    }
+    img {
+      max-width: 100%;
+      height: auto;
+      display: block;
+    }
+  }
+  figure {
+    margin: 0;
+  }
+  figcaption {
+    font-size: 11px;
+    padding: 1em;
+    background: #eee;
+    span {
+      display: block;
+    }
+  }
+  .article-tiles {
+    figure {
+      img {
+        box-shadow: 0 1px 10px rgba(0,0,0,0.5), 0 -1px 10px rgba(0,0,0,0.1);
+        @include media-m {
+          box-shadow: none;
+        }
+      }
+    }
+    h1 {
+      font-family: $sans-serif-narrow;
+    }
+    p {
+      color: #333;
+      line-height: 1.3;
+    }
+    footer {
+      font-family: $sans-serif;
+      margin: 1.7em 0 2em;
+      color: #888;
+      text-transform: uppercase;
+      font-size: 11px;
+      a {
+        color: inherit;
+      }
+    }
+    @include media-m {
+      article {
+        @include gallery(1 of 3);
+        @include rounded;
+        @include border-shadow;
+        background: white;
+      }
+      h1 {
+        font-size: 21px;
+        text-transform: uppercase;
+      }
+    }
+  }
+}
+.main.page {
+  @include media-m {
+    background: white;
+    @include border-shadow;
+    @include rounded;
+    .article-inner {
+      padding: 3em 5em;
+    }
+  }
+  article {
+    figure {
+      &.f_l {
+        margin: 0 1.5em 1em 0;
+      }
+      &.f_r {
+        margin: 0 0 1em 1.5em;
+      }
+      &.f_l,
+      &.f_r {
+        max-width: 50%;
+        height: auto;
+      }
+    }
+  }
+}
+figure.feature img {
+  width: 100%; height: auto;
+  @include media-m {
+    width: auto;
+  }
+}
+.tags {
+  a {
+    display: inline-block;
+    height: 30px; line-height: 30px;
+    font-size: 15px;
+    padding: 0 1em;
+    font-family: $sans-serif;
+    border: 1px solid map-get($colors, red);
+    color: map-get($colors, red);
+    text-decoration: none;
+    @include rounded;
+    margin: 0 1em .3em 0;
+    transition: all .2s linear;
+    &:hover {
+      background: map-get($colors, red);
+      text-decoration: none;
+      color: white;
+    }
+  }
+}
+
+
+

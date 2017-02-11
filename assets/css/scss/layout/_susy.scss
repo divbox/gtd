@@ -1,0 +1,42 @@
+/* Changing Susy default global settings */
+$susy: (
+  flow: ltr,
+  math: fluid,
+  output: float,
+  gutter-position: after,
+  container: 1160px,
+  container-position: center,
+  columns: 4,
+  gutters: .10,
+  column-width: false,
+  global-box-sizing: border-box,
+  last-flow: to,
+  use-custom: (
+    background-image: true,
+    background-options: false,
+    box-sizing: true,
+    clearfix: false,
+    rem: true,
+  )
+);
+
+@include border-box-sizing;
+
+// establish breakpoints
+$break-medium: 800px;
+$break-large: 900px;
+
+@mixin media-m {
+  @media screen and (min-width: $break-medium) {
+    @content;
+  }
+}
+@mixin media-l {
+  @media screen and (min-width: $break-large) {
+    @content;
+  }
+}
+
+.container {
+  @include container;
+}
