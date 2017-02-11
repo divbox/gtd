@@ -9,12 +9,6 @@
 	],
 "creatorBuild": "25504",
 "files": {
-	"\/article.html": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/article.html",
-		"oF": 0
-		},
 	"\/assets\/css\/fonts\/flexslider-icon.eot": {
 		"ft": 8192,
 		"oA": 2,
@@ -69,6 +63,19 @@
 		"oS": 3,
 		"uL": 1
 		},
+	"\/assets\/css\/scss\/components\/_buttons.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "\/assets\/css\/scss\/components\/_buttons.css",
+		"oF": 0,
+		"oS": 3,
+		"uL": 1
+		},
 	"\/assets\/css\/scss\/components\/_comments.scss": {
 		"aP": 0,
 		"bl": 0,
@@ -117,6 +124,19 @@
 		"ma": 1,
 		"oA": 1,
 		"oAP": "\/assets\/css\/scss\/components\/_nav.css",
+		"oF": 0,
+		"oS": 3,
+		"uL": 1
+		},
+	"\/assets\/css\/scss\/components\/_social.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "\/assets\/css\/scss\/components\/_social.css",
 		"oF": 0,
 		"oS": 3,
 		"uL": 1
@@ -276,6 +296,38 @@
 		"oF": 0,
 		"opt": 0
 		},
+	"\/assets\/img\/img-1.png": {
+		"ft": 32768,
+		"iS": 43552,
+		"oA": 0,
+		"oAP": "\/assets\/img\/img-1.png",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/assets\/img\/img-2.png": {
+		"ft": 32768,
+		"iS": 7123,
+		"oA": 0,
+		"oAP": "\/assets\/img\/img-2.png",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/assets\/img\/img-3.png": {
+		"ft": 32768,
+		"iS": 71743,
+		"oA": 0,
+		"oAP": "\/assets\/img\/img-3.png",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/assets\/img\/img-4.png": {
+		"ft": 32768,
+		"iS": 6938,
+		"oA": 0,
+		"oAP": "\/assets\/img\/img-4.png",
+		"oF": 0,
+		"opt": 0
+		},
 	"\/assets\/img\/instagram.png": {
 		"ft": 32768,
 		"iS": 1566,
@@ -299,6 +351,14 @@
 		"oAP": "\/assets\/img\/mail.png",
 		"oF": 0,
 		"opt": 1
+		},
+	"\/assets\/img\/nuts.jpg": {
+		"ft": 16384,
+		"iS": 32254,
+		"oA": 0,
+		"oAP": "\/assets\/img\/nuts.jpg",
+		"oF": 0,
+		"opt": 0
 		},
 	"\/assets\/img\/rss.png": {
 		"ft": 32768,
@@ -461,17 +521,35 @@
 		"sC": 0,
 		"tS": 0
 		},
-	"\/blog.html": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/blog.html",
-		"oF": 0
-		},
 	"\/index.html": {
 		"ft": 8192,
 		"oA": 2,
 		"oAP": "\/index.html",
+		"oF": 1
+		},
+	"\/page.html": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/page.html",
 		"oF": 0
+		},
+	"\/README.md": {
+		"cS": 0,
+		"eF": 1,
+		"eL": 1,
+		"eLB": 0,
+		"ema": 1,
+		"eSQ": 1,
+		"ft": 4096,
+		"oA": 0,
+		"oAP": "\/README.html",
+		"oF": 0,
+		"oFM": 0,
+		"oS": 0,
+		"pHT": 0,
+		"pME": 1,
+		"rFN": 0,
+		"uCM": 0
 		}
 	},
 "hooks": [
@@ -480,7 +558,7 @@
 	},
 "projectAttributes": {
 	"creationDate": 506542535,
-	"displayValue": "div",
+	"displayValue": "gtown",
 	"displayValueWasSetByUser": 0,
 	"iconImageName": "meme-angryPicard"
 	},
