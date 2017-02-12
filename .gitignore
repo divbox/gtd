@@ -1,0 +1,10 @@
+config.codekit3
+.env
+vendor
+*.log
+node_modules
+.DS_Store
+*.swp
+*.swo
+.vscode
+!.gitkeep
