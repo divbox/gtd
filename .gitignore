@@ -1,4 +1,4 @@
-.config.codekit3
+config.codekit3
 .env
 vendor
 *.log
