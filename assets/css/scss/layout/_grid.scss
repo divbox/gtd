@@ -1,0 +1,41 @@
+.row {
+  clear: both;
+  overflow: hidden;
+}
+.col-1of2 {
+  @include media-m {
+    @include span(1 of 2);
+  } 
+}
+.col-1of3 {
+  @include media-m {
+    @include span(1 of 3);
+  } 
+}
+.col-1of4 {
+  @include media-m {
+    @include span(1 of 4);
+  } 
+}
+.col-2of3 {
+  @include media-m {
+    @include span(2 of 3);
+  } 
+}
+.col-2of4 {
+  @include media-m {
+    @include span(2 of 4);
+  } 
+}
+.col-3of4 {
+  @include media-m {
+    @include span(3 of 4);
+  } 
+}
+.col:last-child {
+  margin-right: 0;
+}
+.col-examples .col {
+  height: 100px;
+  background: #666;
+}
