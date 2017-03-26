@@ -22,11 +22,14 @@ jQuery(function($) {
   var query = Modernizr.mq('(min-width: 768px)');
   console.log('flex');
    if (query) {
+
      $('.flexslider').flexslider({
        slideshow: true,
        selector: ".slides > article",
        controlNav: false
      });
+
+     $('.article-tiles article').matchHeight();
    }
 
 });
