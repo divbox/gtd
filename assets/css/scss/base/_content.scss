@@ -142,10 +142,14 @@ figure.feature img {
   border-radius: 50%;
   background-position: center center;
   background-repeat: no-repeat;
+  background-size: 100%;
   display: inline-block;
   border: 1px solid black;
   vertical-align: middle;
   margin-right: 1em;
+  &.small {
+    width: 30px; height: 30px;
+  }
 }
 
 
