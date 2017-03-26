@@ -32,6 +32,9 @@
     @include span(3 of 4);
   } 
 }
+.col.last {
+  margin-right: 0;
+}
 .col:last-child {
   margin-right: 0;
 }
