@@ -1,0 +1,4 @@
+.tile {
+  @include rounded;
+  @include border-shadow;
+}

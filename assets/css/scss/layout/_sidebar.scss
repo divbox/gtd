@@ -11,8 +11,6 @@
 .util {
   background: #ddd;
   padding: 2em .2em;
-  @include border-shadow;
-  @include rounded;
   h4 {
     margin: 0 0 10px;
   }
@@ -55,8 +53,6 @@
 }
 .latest {
   background: white;
-  @include rounded;
-  @include border-shadow;
   text-align: center;
   article {
     position: relative;
@@ -107,4 +103,7 @@
     margin: 0;
     padding-bottom: 1.5em;
   }
+}
+.ad-full {
+  width: 100%; height: auto;
 }
